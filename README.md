@@ -1,4 +1,9 @@
 # Date Range Picker for Angular and Bootstrap
+
+# Zuchao Wang's adaptation
+
+The input will be empty after each update, you have to set its value manually
+
 ![Dependencies](https://david-dm.org/fragaria/angular-daterangepicker.png)
 
 Angular.js directive for Dan Grossmans's [Bootstrap Datepicker](https://github.com/dangrossman/bootstrap-daterangepicker).

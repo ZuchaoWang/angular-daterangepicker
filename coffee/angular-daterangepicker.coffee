@@ -85,7 +85,7 @@ picker.directive 'dateRangePicker', ($compile, $timeout, $parse, dateRangePicker
         _setEndDate(modelCtrl.$modelValue.endDate)
       else _clear()
       # Update the input with the $viewValue (generated from $formatters)
-      el.val(modelCtrl.$viewValue)
+      el.val('')
 
     # This should parse the string input into an updated model object
     modelCtrl.$parsers.push (val) ->

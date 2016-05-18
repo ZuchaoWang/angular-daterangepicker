@@ -11,7 +11,7 @@
     }
   });
 
-  picker.directive('dateRangePicker', ['$compile', '$timeout', '$parse', 'dateRangePickerConfig', function($compile, $timeout, $parse, dateRangePickerConfig) {
+  picker.directive('dateRangePicker', function($compile, $timeout, $parse, dateRangePickerConfig) {
     return {
       require: 'ngModel',
       restrict: 'A',
@@ -103,7 +103,7 @@
           } else {
             _clear();
           }
-          return el.val(modelCtrl.$viewValue);
+          return el.val('');
         };
         modelCtrl.$parsers.push(function(val) {
           var f, objValue, x;
@@ -204,6 +204,6 @@
         });
       }
     };
-  }]);
+  });
 
 }).call(this);
