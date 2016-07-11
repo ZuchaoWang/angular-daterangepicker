@@ -2,7 +2,7 @@
 
 # Zuchao Wang's adaptation
 
-The input will be empty after each update, you have to set its value manually
+The input will be not be changed after each update, you have to set its value manually
 
 ![Dependencies](https://david-dm.org/fragaria/angular-daterangepicker.png)
 
@@ -48,7 +48,7 @@ Prepare model in your controller. The model **must** have `startDate` and `endDa
 
 ```
 exampleApp.controller('TestCtrl', function ($scope) {
-	$scope.datePicker.date = {startDate: null, endDate: null};
+  $scope.datePicker.date = {startDate: null, endDate: null};
 }
 ```
 
